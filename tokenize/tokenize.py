@@ -7,4 +7,11 @@ Created on Sun Aug 19 21:06:02 2018
 """
 
 
-file1 = open('Drive:\Users\ethanlam\nlp\tokenize\thecandidate.txt')
+file1 = open("thecandidate.txt", "r")
+print(file1.read())
+#%%
+import nltk
+
+tokenizer = nltk.tokenize.WhitespaceTokenizer()
+tokenizer.tokenize(file1.read())
+
